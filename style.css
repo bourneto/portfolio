@@ -29,9 +29,15 @@ header p {
     margin: 0;
 }
 nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 25px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
 }
 nav li {
     display: inline;
@@ -140,3 +146,85 @@ section:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
+/* Responsive navigation for larger screens */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+}
+/* Projects layout: mobile-first CSS Grid */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+#projects article {
+    margin-top: 0;
+}
+/* Tablet layout: two project columns */
+@media (min-width: 768px) {
+    #projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+/* Desktop layout: wider content and more breathing room */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1100px;
+        padding: 50px 30px;
+    }
+
+    section {
+        padding: 36px;
+    }
+
+    header h1 {
+        font-size: 3.2rem;
+    }
+}
+/*
+AI USE DOCUMENTATION — PROJECTS GRID
+
+Tool: ChatGPT
+
+Prompt:
+"Create a mobile-first CSS Grid layout for the
+projects section of my portfolio. The HTML has
+a section with id='projects', a heading, and two
+article elements. Keep the heading across the
+full grid width. Use one column on small screens
+and two columns at a min-width of 768px. Do not
+modify the HTML."
+
+AI-generated CSS output:
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+#projects article {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    #projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+*/
