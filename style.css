@@ -140,9 +140,6 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
-header h1::first-letter {
-    color: #8cc63f;
-}
 
 section {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
