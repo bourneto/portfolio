@@ -17,13 +17,14 @@ themeToggle.addEventListener("click", function () {
     }
 });
 
-
-// SCROLLREVEAL ANIMATIONS
+ // SCROLLREVEAL ANIMATIONS
 
 ScrollReveal().reveal("section", {
-    distance: "40px",
-    duration: 800,
+    distance: "60px",
+    duration: 1200,
     origin: "bottom",
-    interval: 200,
-    reset: false
+    interval: 300,
+    reset: true,
+    opacity: 0,
+    scale: 0.95
 });
