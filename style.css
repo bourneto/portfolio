@@ -2,7 +2,7 @@
 :root {
     --background-color: #f4f6f8;
     --text-color: #1f2933;
-    --accent-color: #18453b;
+    --accent-color: #DCEEFF;
     --secondary-color: #ffffff;
     --border-color: #d1d5db;
 }
@@ -10,7 +10,7 @@
 [data-theme="dark"] {
     --background-color: #121820;
     --text-color: #e5e7eb;
-    --accent-color: #60a5fa;
+    --accent-color: #DCEEFF;
     --secondary-color: #1f2933;
     --border-color: #374151;
 }
